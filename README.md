@@ -11,7 +11,7 @@ You'll also need the following libraries in your device's lib directory from the
 I used the following parts in my build:
 - DS3225 Servo, this matches what was used originally (I used this one from [Amazon](https://a.co/d/9nq5n7Z))
 - QT Py ESP32-S2 from [Adafruit](https://www.adafruit.com/product/5325)
-- A SCD30 CO2 sensor from [Adafruit](https://www.adafruit.com/product/4867) - had one of these left over from a previous project, you could go with one of the cheaper ones like [this](https://www.adafruit.com/product/5190). I'd recommend a true CO2 sensor, not one that only provides eCO2. These seem to be iffy in my experience. If you're comfortable soldering and wiring the I2C conenctions yourself, you can find a lot of cheap options on AliExpress as well.
+- A SCD30 CO2 sensor from [Adafruit](https://www.adafruit.com/product/4867) - had one of these left over from a previous project, you could go with one of the cheaper ones like [this](https://www.adafruit.com/product/5190). I'd recommend a true CO2 sensor, not one that only provides eCO2. These seem to be iffy in my experience. If you're comfortable soldering and wiring the I2C connections yourself, you can find a lot of cheap options on AliExpress as well.
 - A STEMMA QT cable to easily connect sensor to QT Py ([Adafruit](https://www.adafruit.com/product/4399))
 
 I also modified the original case to add some venting since I was shoving the ESP32 and the CO2 sensor inside and wanted a little airflow so the readings were reasonable. You can find the modifed part [here](https://github.com/avnc/co2_gauge/tree/main/stl). You'll need Cyrill's original STL also, I've only included the modified part here. It's available in his GitHub [repo](https://github.com/ckuenzi/co2-gauge).
