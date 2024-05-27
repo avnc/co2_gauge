@@ -13,6 +13,8 @@ I used the following parts in my build:
 - QT Py ESP32-S2 from [Adafruit](https://www.adafruit.com/product/5325)
 - A SCD30 CO2 sensor from [Adafruit](https://www.adafruit.com/product/4867) - had one of these left over from a previous project, you could go with one of the cheaper ones like [this](https://www.adafruit.com/product/5190). I'd recommend a true CO2 sensor, not one that only provides eCO2. These seem to be iffy in my experience. If you're comfortable soldering and wiring the I2C connections yourself, you can find a lot of cheap options on AliExpress as well.
 - A STEMMA QT cable to easily connect sensor to QT Py ([Adafruit](https://www.adafruit.com/product/4399))
+- To connect the motor to the mounting plate you'll need some M4 threaded heat set inserts, 4 M4 bolts (~6mm) and of course a soldering iron with heat set tip to match
+- Also obviously helpful: a 3D printer and a color inkjet or other printer. Cyrill's image for the gauge graphic is sized for A4 paper, so careful if you are in US not to allow it to be resized to fit (because then it won't fit correctly in the space).
 
 I also modified the original case to add some venting since I was shoving the ESP32 and the CO2 sensor inside and wanted a little airflow so the readings were reasonable. You can find the modifed part [here](https://github.com/avnc/co2_gauge/tree/main/stl). You'll need Cyrill's original STL also, I've only included the modified part here. It's available in his GitHub [repo](https://github.com/ckuenzi/co2-gauge).
 
