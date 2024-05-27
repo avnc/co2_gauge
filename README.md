@@ -1,4 +1,4 @@
-# CircuitPython controlled Cute Gauge
+# CircuitPython controlled Cute CO2 Gauge
 
 This is a modification of Cyrill Künzi's cute CO2 gauge that he described here: https://kuenzi.dev/co2/. His original implementation integrates with Home Assistant but I needed it to be standalone for my purposes so I used CircuitPython with an Adafruit QT Py ESP32 and a CO2 sensor and wrote some [code](code.py).
 
