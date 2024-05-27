@@ -1,6 +1,12 @@
 # CircuitPython controlled Cute CO2 Gauge
 
-This is a modification of Cyrill Künzi's cute CO2 gauge that he described here: https://kuenzi.dev/co2/. His original implementation integrates with Home Assistant but I needed it to be standalone for my purposes so I used CircuitPython with an Adafruit QT Py ESP32 and a CO2 sensor and wrote some [code](code.py).
+This is a modification of Cyrill Künzi's cute CO2 gauge that he described here: https://kuenzi.dev/co2/. His original implementation integrates with Home Assistant but I needed it to be standalone for my purposes so I used CircuitPython with an Adafruit QT Py ESP32 and an SCD30 CO2 sensor and wrote some [code](code.py).
+
+You'll also need the following libraries in your device's lib directory from the most recent (I used v9.05) CircuitPython bundle:
+- adafruit_bus_device
+- adafruit_motor
+- adafruit_register
+- adafruit_scd30.mpy
 
 I used the following parts in my build:
 - DS3225 Servo, this matches what was used originally (I used this one from [Amazon](https://a.co/d/9nq5n7Z))
