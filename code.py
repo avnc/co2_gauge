@@ -8,6 +8,12 @@ i2c = board.STEMMA_I2C()
 # i2c = busio.I2C(board.SCL, board.SDA, frequency=50000)
 scd = adafruit_scd30.SCD30(i2c)
 
+# note, see info on calibration here: https://learn.adafruit.com/adafruit-scd30/field-calibration
+# if self calibration won't work (there are requirements), but you have a known value or can set in fresh air, try forced calibration
+# mine needed this calibration, was initially reading high by ~300ppm
+scd.self_calibration_enabled = True
+
+
 # note, we're using a 25kg servo (DS3225), your values may vary
 # servo: https://a.co/d/30IFoco
 # using an Adafruit QT Py ESP32-S2 board, your pin may vary
